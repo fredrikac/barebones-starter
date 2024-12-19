@@ -8,13 +8,13 @@ Install the project's dependencies:
 > [Do you know the best package manager for Node.js?](https://www.ssw.com.au/rules/best-package-manager-for-node/) Using the right package manager can greatly enhance your development workflow. We recommend using pnpm for its speed and efficient handling of dependencies. Learn more about why pnpm might be the best choice for your projects by checking out this rule from SSW.
 
 ```
-pnpm install
+npm install
 ```
 
 Run the project locally:
 
 ```
-pnpm dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -32,7 +32,7 @@ NEXT_PUBLIC_TINA_BRANCH=<Specify the branch with Tina configured>
 Build the project:
 
 ```bash
-pnpm build
+npm build
 ```
 
 ## Learn More
