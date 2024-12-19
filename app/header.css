@@ -1,0 +1,14 @@
+.header {
+    background-color: #333;
+    color: white;
+    padding: 2.5rem;
+    margin: -1rem -1rem 1rem -1rem;
+    font-size: x-large;
+}
+
+.headerLink {
+    color: white;
+    text-decoration: none;
+
+    font-family: 'Courier New', Courier, monospace;
+}
