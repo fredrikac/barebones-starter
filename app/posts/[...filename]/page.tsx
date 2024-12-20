@@ -10,18 +10,14 @@ export async function generateStaticParams() {
   return paths || [];
 }
 
-
 export default async function PostPage({
   params,
 }: {
   params: { filename: string[] };
 }) {
-
   const data = await client.queries.post({
     relativePath: `${params.filename}.md`,
   });
 
-  return (
-    <Post {...data}></Post>
-  );
+  return <Post {...data}></Post>;
 }
