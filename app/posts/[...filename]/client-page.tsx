@@ -2,6 +2,7 @@
 import { tinaField, useTina } from "tinacms/dist/react";
 import type { PostQuery } from "../../../tina/__generated__/types";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
+import "./client-page.css";
 
 interface ClientPageProps {
   query: string;
@@ -20,13 +21,14 @@ export default function Post(props: ClientPageProps) {
   });
   const content = data.post.body;
   return (
-    <>
-      <h1 data-tina-field={tinaField(data.post, "title")}>
+    <div className="postWrapper">
+      <h1 data-tina-field={tinaField(data.post, "title")} className="postTitle">
         {data.post.title}
       </h1>
-      <div data-tina-field={tinaField(data.post, "body")}>
+      <hr />
+      <div data-tina-field={tinaField(data.post, "body")} className="postBody">
         <TinaMarkdown content={content} />
       </div>
-    </>
+    </div>
   );
 }
