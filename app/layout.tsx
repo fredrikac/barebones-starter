@@ -1,7 +1,6 @@
-import Link from "next/link";
 import React from "react";
-import "./header.css";
-import "./styles.css";
+import Header from "./header";
+import "./globals.css";
 
 export default function RootLayout({
   children,
@@ -11,19 +10,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header className="header">
-          <Link className="headerLink" href="/">
-            Home
-          </Link>
-          {" | "}
-          <Link className="headerLink" href="/about">
-            About
-          </Link>
-          {" | "}
-          <Link className="headerLink" href="/posts">
-            Posts
-          </Link>
-        </header>
+        <Header />
         <main className="main">{children}</main>
       </body>
     </html>

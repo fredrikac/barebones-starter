@@ -1,6 +1,5 @@
 import Link from "next/link";
-import "./post-list.css";
-import ".././styles.css";
+import ".././globals.css";
 
 export default function PostList(props) {
   return (

@@ -1,0 +1,35 @@
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Add your global styles here */
+  @font-face {
+    font-family: 'Mystic Sunlite';
+    src: url('../public/fonts/Mystic-Sunlite-BF677b5bfe4f68e.ttf') format('truetype');
+    }
+
+  body {
+    font-family: 'Garamond', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+
+  .main
+    {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100vh;
+        padding-top: 2.5rem;
+    }
+
+}
