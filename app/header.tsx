@@ -14,7 +14,7 @@ const Header = () => {
             Posts
           </Link>
         </span>
-        <Link href="/" className="font-customFont text-2xl">
+        <Link href="/" className="font-customFont text-3xl">
           fredrikac.dev
         </Link>
       </nav>
