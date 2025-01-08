@@ -10,7 +10,7 @@ export default function PostList(props) {
       }}
     >
       <h1>Posts</h1>
-      {props.data.postConnection.edges.map((post) => (
+      {props.data.postConnection.edges.reverse().map((post) => (
         <ul key={post.node.id}>
           <li>
             <Link
