@@ -2,7 +2,7 @@
 import { tinaField, useTina } from "tinacms/dist/react";
 import type { PostQuery } from "../../../tina/__generated__/types";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
-import "./client-page.css";
+import "../.././globals.css";
 
 interface ClientPageProps {
   query: string;
@@ -12,6 +12,7 @@ interface ClientPageProps {
   data: PostQuery;
 }
 
+// this is the individual post page
 export default function Post(props: ClientPageProps) {
   // data passes though in production mode and data is updated to the sidebar data in edit-mode
   const { data } = useTina({
@@ -21,12 +22,12 @@ export default function Post(props: ClientPageProps) {
   });
   const content = data.post.body;
   return (
-    <div className="postWrapper">
+    <div className="p-4 w-9/12">
       <h1 data-tina-field={tinaField(data.post, "title")} className="postTitle">
         {data.post.title}
       </h1>
       <hr />
-      <div data-tina-field={tinaField(data.post, "body")} className="postBody">
+      <div data-tina-field={tinaField(data.post, "body")} className="pt-4">
         <TinaMarkdown content={content} />
       </div>
     </div>

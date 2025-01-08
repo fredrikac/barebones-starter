@@ -1,6 +1,5 @@
 import Link from "next/link";
-import "./post-list.css";
-import ".././styles.css";
+import ".././globals.css";
 
 export default function PostList(props) {
   return (
@@ -11,7 +10,7 @@ export default function PostList(props) {
       }}
     >
       <h1>Posts</h1>
-      {props.data.postConnection.edges.map((post) => (
+      {props.data.postConnection.edges.reverse().map((post) => (
         <ul key={post.node.id}>
           <li>
             <Link
