@@ -12,6 +12,19 @@ export default {
       name: "title",
     },
     {
+      type: "datetime",
+      label: "Publish Date",
+      name: "date",
+    },
+    {
+      type: "string",
+      label: "Excerpt",
+      name: "excerpt",
+      ui: {
+        component: "textarea",
+      },
+    },
+    {
       type: "rich-text",
       label: "Blog Post Body",
       name: "body",

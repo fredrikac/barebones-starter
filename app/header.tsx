@@ -3,21 +3,23 @@ import "./globals.css";
 
 const Header = () => {
   return (
-    <header>
-      <nav className="flex justify-between items-center p-8">
-        <span>
-          <Link className="text-lg" href="/about">
-            About
+    <header className="w-full z-40 h-32 sticky top-0 z-0">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-32 flex items-center justify-between">
+        <nav className="flex items-center gap-6">
+          <Link href="/" className="font-customFont text-3xl">
+            fredrikac.dev
           </Link>
-          {" | "}
-          <Link className="text-lg" href="/posts">
-            Posts
-          </Link>
-        </span>
-        <Link href="/" className="font-customFont text-3xl">
-          fredrikac.dev
-        </Link>
-      </nav>
+          <span>
+            <Link className="text-lg" href="/about">
+              About
+            </Link>
+            {" | "}
+            <Link className="text-lg" href="/posts">
+              Posts
+            </Link>
+          </span>
+        </nav>
+      </div>
     </header>
   );
 };
