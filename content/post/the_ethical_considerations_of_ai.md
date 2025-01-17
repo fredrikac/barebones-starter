@@ -3,17 +3,17 @@ title: 'The ethical considerations of AI '
 date: 2025-01-16T23:00:00.000Z
 ---
 
-I'm not sure if this is something I should write about. I have chosen a career in tech, and I love it, but my views on AI may be somewhat controversial for a developer. But what’s the point of having a blog about my thoughts if I can’t or won’t express my actual opinions? So here we go, I guess.
-
-I don’t think it’s ethically or morally justified to use AI for most of what we’re using it for today.
-
-There. I said it. Felt like swearing in church, to be honest.
-
+I'm not sure if this is something I should write about. I have chosen a career in tech, and I love it, but my views on AI may be somewhat controversial for a developer. But what’s the point of having a blog about my thoughts if I can’t or won’t express my actual opinions? So here we go, I guess.\
+\
+I don’t think it’s ethically or morally justified to use AI for most of what we’re using it for today.\
+\
+There. I said it. Felt like swearing in church, to be honest.\
+\
 The development of AI and large language models we’ve seen the past year is amazing.\
-Truly, it’s a revolution.
-
-But it happens so fast. Too fast. I don’t think we’re prepared or able to comprehend the ramifications of this escalating pace of development.
-
+Truly, it’s a revolution.\
+\
+But it happens so fast. Too fast. I don’t think we’re prepared or able to comprehend the ramifications of this escalating pace of development.\
+\
 What does AI usage actually cost? There are many free resources readily available to use, so for me personally, it’s mostly free. And it’s good. Like, really good. I was mind blown by chatGPT when it became available. A couple of weeks ago I tried ClaudeAI and once again - mind blown. Especially when it comes to coding. I’m amazed, and I only have a free account with limited prompts, but it goes a long way and the quality is great. It’s so easy, it almost feels magical.  \
 \
 But, as you probably know, nothing in this world is free and magic is an illusion.  \
