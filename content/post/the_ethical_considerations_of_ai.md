@@ -24,9 +24,8 @@ What about the environmental impact?
 
 What about the social impact?
 
-What about the societal impact?  \
-
-
+What about the societal impact?\
+\
 Data centers require tons of energy to keep cool. Electricity and water. Increasingly powerful hardware. With increasing climate change, can we justify this use of resources?
 
 People need to practice to learn. People need to learn how to value information. How will AI affect our next generations learning ability?
@@ -35,14 +34,13 @@ Our society is built on people working for a living. What happens when entire jo
 \
 I’m also concerned about how we are training our models. They need to be trained with real data, but real data reflects our reality. Since we do not live in a perfect society, unfortunately this  means the data is full of biases, harmful stereotypes and dysfunctional institutional practices.
 
-If we’re not careful, we risk building these biases into our models, cementing them further, which could and likely will have adverse effects on already marginalized people.  \
-
-
+If we’re not careful, we risk building these biases into our models, cementing them further, which could and likely will have adverse effects on already marginalized people.\
+\
 I’m not *against* AI. I think it’s a fantastic tool that can be used for many great things. I just don’t think we can justify using it to everything. Do we really need AI generated posts on social media? Do we really need AI-engineered advertisements? Do we need to use AI to make a shopping list or render images of cute animals? \
 \
 I think we’re very good at asking “can it be done?” and exceeding expectations. But maybe we should also start asking ourselves “should it be done?”  \
 \
-I don’t know. I don’t think anyone really knows at this point. So let’s end this post here, for now. To be continued.  
+I don’t know. I don’t think anyone really knows at this point. So let’s end this post here, for now. To be continued.
 
 \---
 
