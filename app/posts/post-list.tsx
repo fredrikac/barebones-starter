@@ -8,11 +8,9 @@ import { Menu, X } from "lucide-react";
 export default function PostList(props) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  // Sort posts by system creation date (newest first)
+  // Sort posts by creation date (newest first)
   const sortedPosts = [...props.data.postConnection.edges].sort((a, b) => {
-    // Use system filename as a proxy for creation date if needed
-    // Assuming filenames are somewhat date-based or sequential
-    return b.node._sys.filename.localeCompare(a.node._sys.filename);
+    return new Date(b.node.date).getTime() - new Date(a.node.date).getTime();
   });
 
   return (
@@ -51,14 +49,14 @@ export default function PostList(props) {
           lg:min-h-screen
         `}
         >
-          <div className="pl-12 py-6">
+          <div className="pl-8  py-6">
             <h2 className="text-xl font-bold mb-4 pt-12 lg:pt-0">All Posts</h2>
             <nav>
               <ul className="space-y-2">
                 {sortedPosts.map((post) => (
                   <li key={post.node.id}>
                     <Link
-                      className="postLink hover:text-blue-600 block py-1"
+                      className="postLink hover:underline block py-1"
                       href={`/posts/${post.node._sys.filename}`}
                       onClick={() => setIsSidebarOpen(false)}
                     >
@@ -82,7 +80,7 @@ export default function PostList(props) {
                 <h2 className="text-2xl font-bold mb-4">
                   <Link
                     href={`/posts/${post.node._sys.filename}`}
-                    className="hover:text-blue-600"
+                    className="hover:text-gray-600"
                   >
                     {post.node.title}
                   </Link>
@@ -96,7 +94,7 @@ export default function PostList(props) {
                 </div>
                 <Link
                   href={`/posts/${post.node._sys.filename}`}
-                  className="inline-block mt-4 text-blue-600 hover:underline"
+                  className="inline-block mt-4 text-gray-600 hover:underline"
                 >
                   Read more →
                 </Link>
