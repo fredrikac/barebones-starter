@@ -5,7 +5,7 @@ date: 2025-01-22T23:00:00.000Z
 
 Tl;dr: No, I don't think so, but yes, I am a little bit worried. \
 \
-AI is superior when it comes to setting up new projects. Not having to google every single part of the setup, not having to manually configure every package is a huge time saver - especially for developers like me, who has been working at a product company  since graduation. I’ve been here since 2022 (a little over two years) and I still haven’t had to set up a new project. 
+AI is superior when it comes to setting up new projects. Not having to google every single part of the setup, not having to manually configure every package is a huge time saver - especially for developers like me, who has been working at a product company  since graduation. I’ve been here since 2022 (a little over two years) and I still haven’t had to set up a new project.
 
 I did my internship here, so I went from creating projects for school assignments to work in existing code bases. That’s a different skill set. \
 \
@@ -17,8 +17,7 @@ AI is an incredibly useful tool for new projects, especially simple ones like th
 
 But, when working in bigger repositories, I find AI to be less useful. It’s still a great tool, but as the complexity and size of the code base grows, it offers less and less help in finding and solving bugs, and it’s not a given that copilot can implement new features in an existing structure. \
 \
-People don’t write perfect code. Not all solutions are created by best practices. The code in an older code base is probably not written by one person, but many, with different backgrounds, different levels of experience and different ways of thinking. Some solutions will be surprisingly creative (a.k.a. crappy) and some solutions will be on a level of abstraction that does not exist in tutorials or textbooks, only in the brains of great coders.\
-
+People don’t write perfect code. Not all solutions are created by best practices. The code in an older code base is probably not written by one person, but many, with different backgrounds, different levels of experience and different ways of thinking. Some solutions will be surprisingly creative (a.k.a. crappy) and some solutions will be on a level of abstraction that does not exist in tutorials or textbooks, only in the brains of great coders.
 
 Some functions might be remains of older code that hasn’t been removed for some reason (usually the developer implemented new functionality to replace it and then forgot do remove the old stuff). You can’t rely on comments, because there probably won’t be any, and if there are, they might not explain that much anyway. There are dependencies, and integrations to other systems, which has its own limitations that you cannot affect, and work-arounds that were meant to be temporary but became a constant part of the applications scaffolding. \
 \
