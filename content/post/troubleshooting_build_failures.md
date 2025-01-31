@@ -5,7 +5,7 @@ date: 2025-01-28T23:00:00.000Z
 
 It's the 457th day of January. Everything is grey and brown and muddy, the rain is pouring down and I'm tired, and when I opened my emails there were a handful of emails from dependabot and Vercel informing me that two new pull requests aimed at updating @tinacms/cli from 1.8.0 to 1.8.2 and tinacms from 2.6.0 to 2.6.2 had failed the preview build. \
 \
-I have to admit, my first feeling was "uuugghh I really don't want to deal with this right now". Then I reminded myself of what usually happens when I postpone these kinds of tasks - they grow into insurmountable problems that lies in the back of my head, as small stressors clamoring for attention and draining energy, instead of a mildly annoying chore that will probably take less than half-an-hour to fix. 
+I have to admit, my first feeling was "uuugghh I really don't want to deal with this right now". Then I reminded myself of what usually happens when I postpone these kinds of tasks - they grow into insurmountable problems that lies in the back of my head, as small stressors clamoring for attention and draining energy, instead of a mildly annoying chore that will probably take less than half-an-hour to fix.
 
 Vercel gave me the following error: \
 Error: The local Tina schema doesn't match the remote Tina schema. Please push up your changes to GitHub to update your remote tina schema.\
@@ -33,6 +33,9 @@ Yay, progress! \
 \
 I tried adding the `--skip-cloud-checks` flag to see if there might be an authentication issue: \
 \
-`npx tinacms build --preview-base-branch main --preview-name preview --skip-cloud-checks && next build`
-
-And this time it worked - deployment to preview was a success! So I'll have to investigate the authentication further, but that will have to wait because of work. 
+`npx tinacms build --preview-base-branch main --preview-name preview --skip-cloud-checks && next build`\
+\
+And this time it worked - deployment to preview was a success! So I'll have to investigate the authentication further, but that will have to wait because of work.\
+\
+\
+Edit: I added separate configurations for preview and production builds in my package.json instead. 
