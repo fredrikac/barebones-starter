@@ -9,6 +9,12 @@
     "start": "tinacms build && next start",
     "lint": "next lint"
   },
+  "vercel": {
+    "buildCommand": {
+      "default": "echo \"Running production build\" && npx tinacms build && next build",
+      "preview": "echo \"Running preview build with skip-checks\" && npx tinacms build --preview-base-branch main --preview-name preview --skip-cloud-checks && next build"
+    }
+  },
   "dependencies": {
     "next": "^14.2.22",
     "react": "^18.3.1",
