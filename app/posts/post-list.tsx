@@ -44,12 +44,12 @@ export default function PostList(props) {
           fixed lg:static inset-y-0 left-0 
           transform ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"}
           lg:translate-x-0 transition-transform duration-200 ease-in-out
-          w-64 border-r z-20
+          w-72 border-r z-20
           overflow-y-auto
           lg:min-h-screen
         `}
         >
-          <div className="pl-8  py-6">
+          <div className="pl-8  py-6 pr-8">
             <h2 className="text-xl font-bold mb-4 pt-12 lg:pt-0">All Posts</h2>
             <nav>
               <ul className="space-y-2">

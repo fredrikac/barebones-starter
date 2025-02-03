@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./header";
 import "./globals.css";
+import "tailwindcss/tailwind.css";
 
 export default function RootLayout({
   children,

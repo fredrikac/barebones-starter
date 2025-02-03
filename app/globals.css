@@ -5,22 +5,44 @@
 
 @layer base {
   /* Add your global styles here */
+  :root {
+    --primary-200: #403f4c;
+    --primary-300: #191827;
+    --primary-400: #12111b;
+    --secondary: #f0f0f0;
+    --tertiary: #f0f0f0;
+    --quaternary-200: #d64555; 
+    --quinary-50: #fbfbf9;
+    --serif: 'Georgia', serif;
+  }
+
   @font-face {
     font-family: 'Mystic Sunlite';
     src: url('../public/fonts/Mystic-Sunlite-BF677b5bfe4f68e.ttf') format('truetype');
     }
 
   body {
-    font-family: 'Garamond', serif;
+    font-family: var(--serif);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f0f0f0;
+    background-color: var(--quinary-50);
+    color: var(--primary-400);
   }
 
   h1 {
     font-size: 2rem;
-    color: #333;
+    color: var(--primary-300);
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--primary-300);
+  }
+
+  a:hover {
+    color: var(--primary-200);
+    text-decoration: none;
   }
 
   .main
