@@ -25,7 +25,7 @@ export default function Post(props: ClientPageProps) {
     <div className="p-4 w-9/12 md:w-9/12 lg:w-6/12">
       <h1
         data-tina-field={tinaField(data.post, "title")}
-        className="text-md pb-4"
+        className="text-2xl pb-4"
       >
         {data.post.title}
       </h1>

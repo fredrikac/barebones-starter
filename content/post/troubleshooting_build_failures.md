@@ -14,7 +14,7 @@ A quick google search took me to a closed issue on github from November 2024, wh
 \
 I tried checking out the branches locally, installed the updates, built and ran it locally. Worked flawlessly. No changes to commit, working tree clean, the local schema matched the remote schema. I asked ClaudeAI for help, and tried the following steps: \
 \
-**Check if: **\
+**Check if:**\
 \- there's a difference in Vercel environment/configuration and my local configurations\
 \- that clientId in the Tina config matches between environments\
 \- branchname is correctly set in the Vercel environment\
@@ -38,4 +38,4 @@ I tried adding the `--skip-cloud-checks` flag to see if there might be an authen
 And this time it worked - deployment to preview was a success! So I'll have to investigate the authentication further, but that will have to wait because of work.\
 \
 \
-Edit: I added separate configurations for preview and production builds in my package.json instead. 
+Edit: I added separate configurations for preview and production builds in my package.json instead.
