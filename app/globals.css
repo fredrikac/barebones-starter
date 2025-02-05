@@ -3,16 +3,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Georgia:wght@400;500;600;700;800;900&display=swap');
+
 @layer base {
   /* Add your global styles here */
   :root {
+    --primary-100: #f0f0f0;
     --primary-200: #403f4c;
     --primary-300: #191827;
     --primary-400: #12111b;
-    --secondary: #f0f0f0;
-    --tertiary: #f0f0f0;
-    --quaternary-200: #d64555; 
-    --quinary-50: #fbfbf9;
     --serif: 'Georgia', serif;
   }
 
@@ -26,13 +25,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--quinary-50);
+    background-color: var(--primary-100);
     color: var(--primary-400);
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: var(--primary-300);
+
+    @media (min-width: 769px) {
+      font-size: 2rem;
+    }
   }
 
   a {
@@ -41,7 +44,7 @@
   }
 
   a:hover {
-    color: var(--primary-200);
+    color: var(--secondary-400);
     text-decoration: none;
   }
 
