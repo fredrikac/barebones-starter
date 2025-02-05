@@ -3,24 +3,49 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Georgia:wght@400;500;600;700;800;900&display=swap');
+
 @layer base {
   /* Add your global styles here */
+  :root {
+    --primary-100: #f0f0f0;
+    --primary-200: #403f4c;
+    --primary-300: #191827;
+    --primary-400: #12111b;
+    --serif: 'Georgia', serif;
+  }
+
   @font-face {
     font-family: 'Mystic Sunlite';
     src: url('../public/fonts/Mystic-Sunlite-BF677b5bfe4f68e.ttf') format('truetype');
     }
 
   body {
-    font-family: 'Garamond', serif;
+    font-family: var(--serif);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f0f0f0;
+    background-color: var(--primary-100);
+    color: var(--primary-400);
   }
 
   h1 {
-    font-size: 2rem;
-    color: #333;
+    font-size: 1.4rem;
+    color: var(--primary-300);
+
+    @media (min-width: 769px) {
+      font-size: 2rem;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--primary-300);
+  }
+
+  a:hover {
+    color: var(--secondary-400);
+    text-decoration: none;
   }
 
   .main

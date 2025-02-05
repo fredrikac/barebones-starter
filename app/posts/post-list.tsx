@@ -16,7 +16,7 @@ export default function PostList(props) {
   return (
     <div className="min-h-screen">
       {/* Mobile menu button */}
-      <div className="lg:hidden fixed top-4 right-4 z-20">
+      <div className="lg:hidden fixed top-4 right-4 z-50">
         <button
           onClick={() => setIsSidebarOpen(!isSidebarOpen)}
           className="p-2 rounded-md bg-white shadow-md"
@@ -32,7 +32,7 @@ export default function PostList(props) {
       {/* Overlay for mobile */}
       {isSidebarOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-10 lg:hidden"
+          className="fixed inset-0 bg-primary-50 z-10 lg:hidden"
           onClick={() => setIsSidebarOpen(false)}
         />
       )}
@@ -41,16 +41,18 @@ export default function PostList(props) {
         {/* Sidebar */}
         <div
           className={`
-          fixed lg:static inset-y-0 left-0 
+          fixed lg:static inset-y-12 left-0 
           transform ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"}
           lg:translate-x-0 transition-transform duration-200 ease-in-out
-          w-64 border-r z-20
+          w-72 ${isSidebarOpen ? "border-none" : "border-r"} lg:border-r z-20
           overflow-y-auto
           lg:min-h-screen
         `}
         >
-          <div className="pl-8  py-6">
-            <h2 className="text-xl font-bold mb-4 pt-12 lg:pt-0">All Posts</h2>
+          <div className="pl-8 py-6 pr-8">
+            <h2 className="text-l font-bold mb-4 pt-12 text-secondary-500 lg:pt-0">
+              All posts
+            </h2>
             <nav>
               <ul className="space-y-2">
                 {sortedPosts.map((post) => (
@@ -71,17 +73,14 @@ export default function PostList(props) {
 
         {/* Main content */}
         <div className="flex-1 p-6 lg:ml-16">
-          <h1 className="text-3xl font-bold mb-8 pt-12 lg:pt-0">
-            Latest Posts
+          <h1 className="text-2xl font-bold text-secondary-500 mb-8 pt-12 lg:pt-0">
+            Latest posts
           </h1>
           <div className="space-y-12">
             {sortedPosts.map((post) => (
               <article key={post.node.id} className="border-b pb-8">
-                <h2 className="text-2xl font-bold mb-4">
-                  <Link
-                    href={`/posts/${post.node._sys.filename}`}
-                    className="hover:text-gray-600"
-                  >
+                <h2 className="text-xl font-bold text-secondary-500 mb-4 opacity-90">
+                  <Link href={`/posts/${post.node._sys.filename}`}>
                     {post.node.title}
                   </Link>
                 </h2>
@@ -94,7 +93,7 @@ export default function PostList(props) {
                 </div>
                 <Link
                   href={`/posts/${post.node._sys.filename}`}
-                  className="inline-block mt-4 text-gray-600 hover:underline"
+                  className="inline-block mt-4 text-secondary-500 opacity-90 hover:underline"
                 >
                   Read more →
                 </Link>

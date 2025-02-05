@@ -22,8 +22,11 @@ export default function Post(props: ClientPageProps) {
   });
   const content = data.post.body;
   return (
-    <div className="p-4 w-9/12">
-      <h1 data-tina-field={tinaField(data.post, "title")} className="postTitle">
+    <div className="p-4 w-9/12 md:w-9/12 lg:w-6/12">
+      <h1
+        data-tina-field={tinaField(data.post, "title")}
+        className="text-md pb-4"
+      >
         {data.post.title}
       </h1>
       <hr />
