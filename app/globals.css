@@ -29,6 +29,13 @@
     color: var(--primary-400);
   }
 
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    color: var(--primary-300);
+    font-size: small;
+    background-color: #e0e0e0;
+  }
+
   h1 {
     font-size: 1.4rem;
     color: var(--primary-300);

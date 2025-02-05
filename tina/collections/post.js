@@ -5,6 +5,7 @@ export default {
   label: "Blog Posts",
   name: "post",
   path: "content/post",
+  format: 'md',
   fields: [
     {
       type: "string",
