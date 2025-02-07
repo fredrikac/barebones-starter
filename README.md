@@ -1,47 +1,70 @@
-This is a [Tina CMS](https://tina.io/) project.
+# Personal Blog with TinaCMS
 
-## Local Development
+A modern personal blog built with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), and [TinaCMS](https://tina.io/) for content management.
 
-Install the project's dependencies:
+## Getting Started
 
-> [!NOTE]  
-> [Do you know the best package manager for Node.js?](https://www.ssw.com.au/rules/best-package-manager-for-node/) Using the right package manager can greatly enhance your development workflow. We recommend using pnpm for its speed and efficient handling of dependencies. Learn more about why pnpm might be the best choice for your projects by checking out this rule from SSW.
+### Prerequisites
 
+- Node.js (version 14 or higher)
+- npm or yarn
+- git
+
+### Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/fredrikac/barebones-starter.git
+cd barebones-starter
 ```
+
+2. Install dependencies
+
+```bash
 npm install
 ```
 
-Run the project locally:
+3. Set up environment variables
+   - Copy `.env.example` to `.env.local`
+   ```bash
+   cp .env.example .env.local
+   ```
+   - Configure the following variables:
+     - `NEXT_PUBLIC_TINA_CLIENT_ID`: Your TinaCMS client ID (get this from app.tina.io)
+     - `TINA_TOKEN`: Your TinaCMS access token (get this from app.tina.io)
+     - `NEXT_PUBLIC_TINA_BRANCH`: (Optional) Specify which branch to use for content
 
-```
+### Development
+
+Start the development server:
+
+```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to see your blog in action.
 
-### Building the Starter Locally (Using the hosted content API)
+### Production Build
 
-Replace the `.env.example`, with `.env`
-
-```
-NEXT_PUBLIC_TINA_CLIENT_ID=<get this from the project you create at app.tina.io>
-TINA_TOKEN=<get this from the project you create at app.tina.io>
-NEXT_PUBLIC_TINA_BRANCH=<Specify the branch with Tina configured>
-```
-
-Build the project:
+Create a production build:
 
 ```bash
-npm build
+npm run build
 ```
 
-## Learn More
+## Deployment
 
-To learn more about Tina, take a look at the following resources:
+This project can be easily deployed on [Vercel](https://vercel.com). Follow our [deployment guide](https://tina.io/guides/tina-cloud/add-tinacms-to-existing-site/deployment/) for detailed instructions.
 
-- [Tina Docs](https://tina.io/docs)
-- [Getting started](https://tina.io/docs/setup-overview/)
+Important deployment considerations:
 
-You can check out [Tina Github repository](https://github.com/tinacms/tinacms) - your feedback and contributions are welcome!
+1. Configure environment variables in your Vercel dashboard
+2. Ensure your TinaCMS project is properly set up at app.tina.io
+3. Connect your GitHub repository for automatic deployments
 
-## [Deploy on Vercel](https://tina.io/guides/tina-cloud/add-tinacms-to-existing-site/deployment/)
+## Resources
+
+- [TinaCMS Documentation](https://tina.io/docs)
+- [Getting Started with TinaCMS](https://tina.io/docs/setup-overview/)
+- [TinaCMS GitHub Repository](https://github.com/tinacms/tinacms)
