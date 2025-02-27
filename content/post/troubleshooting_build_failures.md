@@ -38,4 +38,5 @@ I tried adding the `--skip-cloud-checks` flag to see if there might be an authen
 And this time it worked - deployment to preview was a success! So I'll have to investigate the authentication further, but that will have to wait because of work.\
 \
 \
-Edit: I added separate configurations for preview and production builds in my package.json instead.
+Edit: I added separate configurations for preview and production builds in my package.json instead. \
+Cheers?
