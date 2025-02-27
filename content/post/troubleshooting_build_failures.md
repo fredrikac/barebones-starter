@@ -39,4 +39,4 @@ And this time it worked - deployment to preview was a success! So I'll have to i
 \
 \
 Edit: I added separate configurations for preview and production builds in my package.json instead. \
-Cheers?
+Cheers!
